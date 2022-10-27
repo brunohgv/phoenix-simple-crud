@@ -1,0 +1,14 @@
+defmodule Crud.Repo.Migrations.CreateAccounts do
+  use Ecto.Migration
+
+  def change do
+    create table(:accounts) do
+      add :id, :string
+      add :username, :string
+      add :password, :string
+      add :name, :string
+
+      timestamps()
+    end
+  end
+end
